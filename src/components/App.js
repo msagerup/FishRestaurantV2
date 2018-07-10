@@ -40,7 +40,7 @@ export default class App extends Component {
           <Header tagline="Fresh Seafood Market" />
           <Header tagline="Fresh Seafood Market" />
           <ul className="fishes">
-            {Object.keys(this.state.fishes).map(key => <p>{key}</p>)}
+            {Object.keys(this.state.fishes).map(key => <Fish key="{key}" />)}
           </ul>
         </div>
         <Order />
